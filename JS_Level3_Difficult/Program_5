@@ -1,0 +1,29 @@
+console.log(1 + '2' + '2'); 
+console.log(1 + +'2' + '2');
+console.log(1 + -'1' + '2');
+console.log(+'1' + '1' + '2');
+console.log('A' - 'B' + '2');
+console.log('A' - 'B' + 2);
+
+Output1 :: 122
+Explaination :: 1 is a number and '2', '2' are charcters so the o/p is is a concatenation i.e 122
+
+Output2 :: 32
+Explaination :: since 2 is a character and we have two operators '+' '+' , so its not taking it as concatenation. Instead its taking it as integer and increments the value to 3.
+                so, after addition ,3 and '2' is the concatenated.
+
+Output3:: 02
+Explaination :: similarly like  above due to aritmatic operator '+' and '-' it is considering as integers and the outcome is 0.
+                Then '2' is concatenated with 0 as its a character.
+
+Output4 :: 112
+Explaination :: '1' is a character and there is '+' preceeding it, which is taken like a concatenation operator. So, it will not have any affect as there is no value to concatenate it with.
+                And, '1', '2' are also charcters. So, all 3 values will be concatenation
+
+Output5 :: Nan2
+Explaination :: Since 'A' & 'B' are characters, performing substraction on it will generate an illegal no. and '2' is a string which is concatenated to it.
+
+
+Output6 :: NaN
+Explaination :: Similarly like above, 'A' & 'B' are characters, performing substraction on it will generate an illegal no. And adding integer 2 in it will give an outcome of illegal no. only.
+

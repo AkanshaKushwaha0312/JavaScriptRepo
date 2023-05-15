@@ -1,0 +1,13 @@
+var x = 1;
+function foo() {
+  x = 2;
+  console.log(x);
+}
+foo();
+console.log(x);
+
+Output1 :: 2
+Output2 :: 2
+
+Explaination :: var x = 1 is declared globally but, inside function foo, the value of x which was 1 is overridden with 2.
+                So, both the times we are printing 'x', the outcome is 2.

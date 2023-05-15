@@ -1,0 +1,6 @@
+var x = [1, 2, 3];
+x[10] = 10;
+console.log(x);
+
+output :: 1,2,3,undefined,undefined,undefined,undefined,undefined,undefined,10
+Explaination :: Since we have provided values for index 0,1,2 and 10, the remaining indexes value (from 3-9), the index will be present but the values will be undefined.

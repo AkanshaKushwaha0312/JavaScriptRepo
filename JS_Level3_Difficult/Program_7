@@ -1,0 +1,8 @@
+console.log((function f(n) { return ((n > 1) ? n * f(n-1) : n) })(10));
+
+Output :: 3628800
+Explaination :: We have written a recursive program. Inside function f(n), using ternary operator we are checking conditions.
+                We are passing the value of 10. The condition 'n*f(n-1)' will be execution till 'n>1' as soon as 'n' will become '1' , the condition will break and only 'n' will be returned.
+                The output is 3628800 since we doing factorial of value 10. (10*9*8*7*6*5*4*3*2*1)
+                
+

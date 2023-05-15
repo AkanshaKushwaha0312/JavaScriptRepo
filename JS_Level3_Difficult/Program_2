@@ -1,0 +1,8 @@
+console.log(1 + 2 + "3");
+console.log("1" + 2 + 3);
+
+Output1 :: 33
+Explaination :: Adding 1&2 results in 3 and since "3" is a String, it will concatenate with 3.
+
+Output2 :: 123
+Explaination :: Since "1" is a String, 2&3 will get concatenated to it like a String.
