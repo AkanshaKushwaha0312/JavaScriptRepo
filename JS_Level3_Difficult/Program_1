@@ -1,0 +1,11 @@
+var x = 1;
+function foo() {
+  console.log(x);
+  var x = 2;
+}
+foo();
+
+Output :: undefined
+Explaination :: In JavaScript, variable declarations are hoisted to the top of their scope, but their assignments remain in the original location. This means that the variable x inside the foo function is hoisted, but its assignment of 2 is not hoisted.
+So, when the console.log(x) statement is executed within the foo function, the variable x exists in the scope but has not been assigned a value yet. Therefore, its value is undefined. Only after the console.log statement, the assignment var x = 2 is executed.
+Hence, the output will be undefined because the variable x is accessed before it is assigned the value of 2.
