@@ -1,0 +1,11 @@
+for (var i = 0; i < 5; i++) {
+  setTimeout(function() {
+    console.log(i);
+  }, i * 1000);
+}
+
+Output :: 5 5 5 5 5
+
+Explaination :: When the setTimeout function is called, it registers a callback function to be executed after a specified delay, which is i * 1000 milliseconds in this case.
+However, the loop runs synchronously and quickly completes all iterations before any of the registered callbacks are executed. By the time the first callback function is executed, the value of i is already 5, as the loop has finished.
+Since JavaScript uses function-level scope, not block-level scope, there is only one variable i shared by all the callback functions. Thus, when the callbacks finally execute, they all reference the same i variable, which has a value of 5. That's why 5 is printed five times.

@@ -1,0 +1,13 @@
+function foo() {
+  return
+  {
+    message: "Hello"
+  };
+}
+console.log(foo());
+
+Output :: undefined
+
+Explaination :: In JavaScript, when a return statement is followed by a line break or newline character, the JavaScript interpreter automatically inserts a semicolon (;) after the return statement. 
+As a result, the return statement doesn't have an explicit value to return, so it returns undefined. The subsequent block of code within curly braces {} is treated as a separate code block and is not related to the return statement. Therefore, the object with the message property is never executed or returned.
+Hence, undefined will be logged to the console when console.log(foo()) is executed.
